@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #f2f5f9;
+    color: #333;
+}
+header {
+    background-color:  #12663f;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+.navbar {
+   background-color: #2c3e50;
+   padding:12px;
+   display:flex;
+   justify-content:center;
+    gap:25px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #99f2c8;
+}
+
+.main {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+.main h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section {
+    background-color: white;
+    margin: 30px auto;
+    padding: 40px;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}   
+
+.section h2 {
+    margin-bottom: 15px;
+    color: #1f4037;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cards > * {
+    flex: 1 1 150px;
+}
+.card {
+    background-color: #86e99f;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #12663f;
+    box-shadow: 0 0 5px rgba(18,102,63,0.3);
+}
+
+.btn {
+    padding: 12px;
+    background-color: #1f4037;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #145a32;
+    transform: translateY(-2px);
+}
+.video-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+}
+.video {
+    display: block;
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.login-side {
+    width: 40%;
+}
+.audio {
+    display: block;
+    margin: 20px auto;
+}
+.video {
+    width: 60%;
+    height: 350px;
+    border-radius: 10px;
+}
+.learning-container {
+    background-color: #f4f6f8;
+    margin: 30px auto;
+    padding: 30px;
+    width: 95%;
+    max-width: 1200px;
+    border-radius: 12px;
+}
+
+.learning-section h2 {
+    color: #2c3e50;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.learning-section h3 {
+    margin-bottom: 10px;
+}
+
+.learning-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.learning-section li {
+    margin: 8px 0;
+}
+
+.learning-section a {
+    text-decoration: none;
+    color: #5832c0;
+    font-weight: bold;
+}
+
+.learning-section a:hover {
+    text-decoration: underline;
+}
+
+.tutorial-row {
+    display: flex;
+    gap: 40px;
+    justify-content:center;
+}
+
+
+.tutorial-box {
+    flex: 1;
+    max-width: 420px;
+}
+.documentation {
+    text-align: center;
+    margin-top: 40px;
+}
+.learning-frame {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.edit-profile-section {
+    max-width: 700px;
+}
+.edit-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #12663f;
+    box-shadow: 0 0 5px rgba(18,102,63,0.3);
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.secondary-btn {
+    background-color: #7f8c8d;
+}
+
+.secondary-btn:hover {
+    background-color: #636e72;
+}
+

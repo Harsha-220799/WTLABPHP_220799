@@ -1,0 +1,18 @@
+.instructions-tab {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #b0d4b9;
+}
+
+.instructions-tab th,
+.instructions-tab td {
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.instructions-tab th {
+    background-color: #12663f;
+    color:white;
+    text-align: left;
+}
