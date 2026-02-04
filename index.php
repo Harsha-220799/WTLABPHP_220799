@@ -5,6 +5,8 @@
    
     <title>Online Examination System</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -41,10 +43,10 @@
         <h2>Student Login</h2>
         <label>If not registered? <a href="signup.php">sign up</a></label><br><br>
 
-        <form class="login-form" action="php/loginprocess.php" method="POST">
+        <form class="login-form" action="php/loginprocess.php" onsubmit="return validateLogin()" method="POST">
 
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="pass" placeholder="Password" required>
+            <input type="email"  id="loginemail" name="email" placeholder="Email" required>
+            <input type="password" id="loginpass"name="pass" placeholder="Password" required>
             <input type="submit" class="btn" value="Login">
         </form>
 

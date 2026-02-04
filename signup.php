@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>OnlineExamination|SignUp</title>
-       
+        <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -23,18 +23,18 @@
         <h2>Create Account</h2>
         <p>Please fill in the details to create your account</p><br>
 
-        <form class="login-form" action="php/signprocess.php" method="POST">
+        <form class="login-form" action="php/signprocess.php" method="POST" onsubmit="return validateSignup()">
             <label>Full Name</label>
-            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
             <label>Email</label>
-            <input type="email" name="email" placeholder="Email" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
             <label>Password</label>
             <input type="password" name="pass" placeholder="Password" required>
             <label>Confirm Password</label>
-            <input type="password" name="cpass" placeholder="Confirm Password" required>
+            <input type="password" id="cpass" name="cpass" placeholder="Confirm Password" required>
             <button type="submit" class="btn">Sign Up</button>
             <div >
-                <p>Already have an account? <a href="index.html">Login</a></p>
+                <p>Already have an account? <a href="index.php">Login</a></p>
             </div>
         </form>
     </div>
