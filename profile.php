@@ -59,8 +59,37 @@ if (!isset($_SESSION['email'])) {
     </div>
 
 </section>
+<section class="section">
+    <h2>File Upload & Download</h2>
+
+    
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="labfile" required>
+        <button type="submit" name="upload" class="btn">Upload</button>
+    </form>
+    <?php
+
+        if(isset($_POST['upload'])){
+
+            $fileName = $_FILES['labfile']['name'];
+            $tempName = $_FILES['labfile']['tmp_name'];
+
+            $target = "uploads/" . $fileName;
+
+            if(move_uploaded_file($tempName, $target)){
+                echo "<p style='color:green;'>File Uploaded Successfully!</p>";
+                echo "<a href='uploads/$fileName' download>Download File</a>";
+            } else {
+                echo "<p style='color:red;'>Upload Failed!</p>";
+            }
+        }
 
 
+    ?>
+<br><br>
+
+    <a href="filesdetails.php" >View File Details</a>
+</section>
 
 </body>
 </html>

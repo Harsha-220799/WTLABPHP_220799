@@ -1,0 +1,2 @@
+User harsha  accessed lab at 11-02-2026 12:06:19
+Writing using fopen + fwrite
