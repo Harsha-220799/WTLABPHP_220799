@@ -47,7 +47,11 @@
 
             <input type="email"  id="loginemail" name="email" placeholder="Email" required>
             <input type="password" id="loginpass"name="pass" placeholder="Password" required>
-            <input type="submit" class="btn" value="Login">
+            <input type="submit" class="btn" value="Login" >
+
+            <br>
+            <a href="google-login.php" class="btn">Login with Google</a>
+
         </form>
 
     </section>
